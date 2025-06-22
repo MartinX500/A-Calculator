@@ -1,0 +1,89 @@
+.calculator{
+    margin: 0 auto;
+    width: 20rem;
+    height: 30rem;
+    background-color: #333333;
+    border-radius: 1rem;
+}
+.inside{
+    margin: 0 auto;
+    width: 17rem;
+    height: 27rem;
+}
+input{
+    width: 97.5%;
+    height: 5rem;
+    text-align: right;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.flex-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+button{
+    width: 4rem;
+    height: 4rem;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: #222222;
+}
+.AC{
+    background-color: red;
+}
+.AC:hover{
+    background-color: #ee0000;
+}
+.operator{
+    background-color: gray;
+}
+.operator:hover{
+    background-color: #777777;
+}
+.equal{
+    width: 8rem;
+    background-color: blue;
+}
+.equal:hover{
+    background-color: #0000ee;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator{
+        width: 100%;
+    }
+    .inside{
+        width: 70%;
+    }
+    button{
+        width: 25%
+    }
+    .equal{
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator{
+        width: 100%;
+    }
+        .inside{
+        width: 70%;
+    }
+    button{
+        width: 25%
+    }
+    .equal{
+        width: 50%;
+    }
+}
